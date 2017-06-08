@@ -4,7 +4,7 @@ THE MENU: Enabling this partial creates a hamburger icon that opens a menu. Itâ€
 
 
 <!-- Trigger element, which is hidden -->
-<input type="checkbox" id="menu-trigger" />
+<input type="checkbox" id="menu-trigger" checked/>
 
 <!-- Thus label which control the trigger. The hamburger icon is a background image in      the CSS (base64 encoded svg) in main.css. Hover and close states in defer.css-->
 <label for="menu-trigger" id="open-menu" class="open-menu btn"></label>
@@ -32,4 +32,8 @@ navTrigger.onclick = function () {
     document.getElementsByTagName("body")[0].style.marginTop = "0";
   }
 }
+
+bodyTag.classList.add("menu-transition");
+bodyTag.style.marginTop = menu.clientHeight + "px";
+
 </script>
