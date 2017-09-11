@@ -15,7 +15,11 @@
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
     {{! Styles'n'Scripts }}
-    <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+
+    <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap-responsive.min.css"}}" /> 
+    <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />       
+    <link rel="stylesheet" type="text/css" href="{{asset "css/ala-styles-headerfooter.css"}}"/>
 
 <!-- For speed, I’ve added the response from this link straight into defer.css-->
 <!--<link rel="stylesheet" href="//brick.a.ssl.fastly.net/Source+Serif+Pro:400,700/Source+Sans+Pro:400,900,400i,900i/Alegreya:400i,700i">-->
@@ -23,50 +27,11 @@
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
-<body class="{{body_class}}" id="body">
+<body class="{{body_class}} container" id="body">
+    <div id="ala-header" ></div>
 
     {{! Everything else gets inserted here }}
     {{{body}}}
-
-    <footer class="site-footer">
-    <!--
-      <a class="subscribe icon-feed" href="{{@blog.url}}/rss/">
-       <span class="tooltip">Subscribe!</span>
-      </a>
-    -->
-<!--  Uncomment if you want a copy of your navigation in the footer. It’s pretty cool, and gives your visitors something to do when they finish an article other than commenting, sharing, or closing the tab.    -->
-      <nav role="navigation">
-        {{navigation}}
-      </nav>
-      <section>
-        <span class="print-data copyright-notice">
-          &copy; {{date format="YYYY"}}
-          <a href="{{@blog.url}}/">{{@blog.title}}</a>
-          &nbsp;&nbsp;
-        </span>
-    <!--
-        <span>
-
-          <a href="http://github.com/curiositry/mnml-ghost-theme">mnml</a>
-          theme by
-          <a href="http://curiositry.github.io">Curiositry</a>
-        </span>
-
-        <span>
-         &nbsp;&bull;&nbsp;
-         Proudly published with
-          <a href="https://ghost.org"><span class="icon-ghost typl8-zeta"></span><span class="hidden">Ghost</span></a>             </span>
-      </section>
-     -->
-    </footer>
-
-    <!--
-    This generates a handsome modal menu and hamburger icon. If you want to use it, edit     menu.hbs and add your links (line ~146), then remove the ! from this helper to           activate it.
-    -->
-    {{#if @blog.navigation}}
-      {{>menu}}
-    {{/if}}
-    
 
     <!-- Ghost outputs important scripts and data with this tag -->
     {{ghost_foot}}
@@ -94,6 +59,13 @@
     {{! The main JavaScript file for Mnml (Look, ma! No jQuery!)}}
     <script async src="{{asset "js/index.js"}}"></script>
     <script defer src="{{asset "js/prism.min.js"}}"></script>
+    <script aysnc src="{{asset "js/jquery.min.js"}}"></script>
+    <script src="{{asset "js/bootstrap.min.js"}}"></script>
+    <script>
+    $(function(){
+      $("#ala-header").load("https://bioatlas.se/static/banner.html");
+    });
+    </script>
 
 </body>
 </html>

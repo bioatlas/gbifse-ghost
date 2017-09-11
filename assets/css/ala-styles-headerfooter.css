@@ -1,0 +1,24 @@
+/* ALA custom style rules
+================================= */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900);
+
+/* ALA Header
+================================= */
+.navbar {border-bottom: 2px solid rgb(231, 231, 231);}
+.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {margin-left: 0;margin-right: 0;}
+.navbar .container {width: auto;}
+.navbar .container-navbar {margin-top: 12px;padding:0 15px;}
+.navbar .navbar-inner {min-height: 50px;}
+.navbar .brand {padding:0 15px 15px 15px;margin-left:-15px;}
+.navbar-inner  img.brand {max-height: 20px;margin-top: 2px;}
+.navbar-inner a.brand {display: block;float: left;color: #f47a61;font-size: 16px;padding-right: 15px;font-weight:900;}
+.navbar-inner ul.nav > li > a,.navbar-inner  a.brand {padding: 15px 10px;line-height: 20px;text-shadow: none;}
+.navbar-inner  ul.dropdown-menu li a {padding: 3px 20px;}
+.navbar-inner form {margin: 0; position: relative; left: 0; display: block; float: left;}
+.navbar-inner form input {width: 172px;}
+.navbar-inner form input, .navbar form .btn {margin-top: 10px;}
+.navbar .btn-navbar {margin: 8px 15px;padding: 9px 10px;}
+.navbar .nav>li>a {text-shadow: none;}
+.navbar-nav{pointer-events: auto;}
+.ala-contentspacer {height: 74px;}
+.navbar .row-search .nav li.dropdown>.dropdown-toggle .caret, .navbar .row-search .nav li.dropdown.open>.dropdown-toggle .caret, .navbar .nav li.dropdown.active>.dropdown-toggle .caret, .navbar .nav li.dropdown.open.active>.dropdown-toggle .caret {border-top-color: white;border-bottom-color: white;}

@@ -108,11 +108,12 @@ html {
 }
 
 body {
-    font-family: "Source Serif Pro", Georgia, serif;
+    /* font-family: "Source Serif Pro", Georgia, serif; */
     color: #333;
 /*    font-size:100%;*/
-    font-size:21px;
-    background: #fdfdfd;
+    /* font-size:21px; */
+    /* background: #fdfdfd; */
+    background: #fff;
 
     -webkit-hyphens: auto;
        -moz-hyphens: auto;
@@ -527,7 +528,7 @@ margin on the iframe, cause it breaks stuff. */
 /* Creates a responsive wrapper that makes our content scale nicely */
 .inner {
   position: relative;
-  max-width: 780px;
+  /* max-width: 780px; */
   margin: 0 auto;
 }
 
@@ -692,7 +693,7 @@ aside.note:before{
   text-align: center;
   padding: 0.825rem 0 0.825rem 0;
   border-bottom: #e0e4e7 1px solid;
-  max-width:850px !important;
+  /*max-width:850px !important;*/
   padding: relative;
   margin: 0 auto;
 }
@@ -730,7 +731,7 @@ aside.note:before{
 .page-template .main-nav--content{
   position: relative;
   width: 100%;
-  max-width: 780px;
+  /* max-width: 780px; */
   padding-left: .55rem;
   margin: auto;
 }
@@ -893,7 +894,7 @@ aside.note:before{
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
   position: relative;
-  max-width: 780px;
+  /* max-width: 780px; */
   margin: 2.457rem auto;
   padding-bottom: 2.457rem;
   border-bottom: #EBF2F6 1px solid;
@@ -933,7 +934,7 @@ aside.note:before{
 .paged .post,
 .tag-template .post,
 .author-template .post{
-  max-width:850px;
+  /* max-width:850px; */
 }
 
 .post-thumbnail{
@@ -946,6 +947,7 @@ aside.note:before{
 
 .post-thumbnail img{
   max-width:250px;
+  max-height: 100px !important;
 }
 
 .post-content > p:first-child:first-letter{
